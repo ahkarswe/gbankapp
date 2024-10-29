@@ -1,11 +1,12 @@
 <?php
-$servername = "ahkar_mariadb_1";
-$username = "root";
-$password = "P@ssw0rd";
+$servername = "gbank-server.mysql.database.azure.com";
+$username = "ksqhgzhdhh";
+$password = "P@ssword";
 $database = "mindgnite";
+$port = 3306;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password ,$database);
+$conn = new mysqli($servername, $username,$port, $password ,$database);
 
 // Check connection
 if ($conn->connect_error) {

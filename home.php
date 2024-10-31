@@ -13,11 +13,11 @@ if(isset($_POST['login'])){
   $db_password=$row['password'];
   $db_group=$row['user_group'];
   //echo $db_password;
-  
+
 if($userName!=$db_username || password_verify($userPassword,$db_password)==false){
 
   print_r ($db_username);
-  echo 
+  echo
 
   "
   <div class='alert alert-primary alert-dismissible fade show' role='alert'> <strong>User name or Password is incorrect.</strong>
@@ -25,18 +25,18 @@ if($userName!=$db_username || password_verify($userPassword,$db_password)==false
   </div>
   "
       ;
-      
+
 }elseif($userName==$db_username && password_verify($userPassword,$db_password)){
     $_SESSION['ugroup']=$db_group;
     $_SESSION['uname']=$db_username;
     header("location:/index.php");
   exit();
-}  
-  
+}
+
   /*if($userName!=$db_username || $userPassword!=$db_password){
 
     print_r ($db_username);
-    echo 
+    echo
 
     "
     <div class='alert alert-primary alert-dismissible fade show' role='alert'> <strong>User name or Password is incorrect.</strong>
@@ -44,21 +44,21 @@ if($userName!=$db_username || password_verify($userPassword,$db_password)==false
     </div>
     "
         ;
-        
+
   }
   elseif(password_verify($userPassword,$db_password)){
     $_SESSION['ugroup']=$db_group;
     $_SESSION['uname']=$db_username;
     header("location:/index.php");
         exit();
-    
+
   }*/
 
-  
+
 
 
 }
-  
+
 
 ?>
 
@@ -75,7 +75,7 @@ if($userName!=$db_username || password_verify($userPassword,$db_password)==false
     <title>Home</title>
 </head>
 <body>
-    
+
     <div class="container-fluid col-sm-6">
         <div class="card">
             <div class="card-header">
@@ -95,13 +95,13 @@ if($userName!=$db_username || password_verify($userPassword,$db_password)==false
         <div class="row mb-3">
         <div class="offset-sm-3 col-sm-3 d-grid ">
           <button class="btn btn-primary" type="submit" name="login">Login</button>
-       
+
 </div>
         </div>
       </form>
     </div>
     <div class="card-footer">
-        
+
     </div>
     </div>
     </div>

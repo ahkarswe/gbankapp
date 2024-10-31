@@ -1,9 +1,8 @@
 <?php
 $servername = "gbank-server.mysql.database.azure.com";
 $username = "ksqhgzhdhh";
-$password = "P@ssword";
+$password = "P@ssw0rd";
 $database = "gbank-database";
-$port = 3306;
 
 // Create connection
 $conn = new mysqli($servername, $username,$port, $password ,$database);

@@ -2,7 +2,7 @@
 $servername = "gbank-server.mysql.database.azure.com";
 $username = "ksqhgzhdhh";
 $password = "P@ssword";
-$database = "mindgnite";
+$database = "gbank-database";
 $port = 3306;
 
 // Create connection

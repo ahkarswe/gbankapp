@@ -5,7 +5,7 @@ $password = "P@ssw0rd";
 $database = "gbank-database";
 
 // Create connection
-$conn = new mysqli($servername, $username,$port, $password ,$database);
+$conn = new mysqli($servername, $username, $password , $database);
 
 // Check connection
 if ($conn->connect_error) {
@@ -13,4 +13,3 @@ if ($conn->connect_error) {
 }else{
     //echo"connected";
 }
-?>
